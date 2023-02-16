@@ -9,7 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.rajeshkawali.model.UserInfo;
 import com.rajeshkawali.service.UserInfoService;
-
+/**
+ * 
+ * @author Rajesh_Kawali
+ *
+ */
 @RestController
 @RequestMapping("/api/v1/security")
 public class UserInfoController {

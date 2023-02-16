@@ -6,7 +6,11 @@ import org.springframework.stereotype.Service;
 
 import com.rajeshkawali.model.UserInfo;
 import com.rajeshkawali.repository.UserInfoRepository;
-
+/**
+ * 
+ * @author Rajesh_Kawali
+ *
+ */
 @Service
 public class UserInfoServiceImpl implements UserInfoService {
 

@@ -10,7 +10,11 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import com.rajeshkawali.model.UserInfo;
-
+/**
+ * 
+ * @author Rajesh_Kawali
+ *
+ */
 public class UserInfoUserDetails implements UserDetails {
 
 	private static final long serialVersionUID = 1L;
