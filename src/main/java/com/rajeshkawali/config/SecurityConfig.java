@@ -24,7 +24,7 @@ public class SecurityConfig {
 	@Bean
 	public UserDetailsService userDetailsService() {
 
-		return new UserInfoUserDetailsService();
+		return new UserDetailsServiceImplements();
 	}
 
 	@Bean

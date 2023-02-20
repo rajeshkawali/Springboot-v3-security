@@ -25,5 +25,4 @@ public class UserInfoServiceImpl implements UserInfoService {
 		repository.save(userInfo);
 		return "New user added to system";
 	}
-
 }

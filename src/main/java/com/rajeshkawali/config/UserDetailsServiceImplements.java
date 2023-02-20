@@ -16,7 +16,7 @@ import com.rajeshkawali.repository.UserInfoRepository;
  *
  */
 @Component
-public class UserInfoUserDetailsService implements UserDetailsService {
+public class UserDetailsServiceImplements implements UserDetailsService {
 
     @Autowired
     private UserInfoRepository repository;
@@ -24,7 +24,7 @@ public class UserInfoUserDetailsService implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         Optional<UserInfo> userInfo = repository.findByUsername(username);
-        return userInfo.map(UserInfoUserDetails::new)
+        return userInfo.map(UserDetailsImplements::new)
                 .orElseThrow(() -> new UsernameNotFoundException("user not found " + username));
 
     }

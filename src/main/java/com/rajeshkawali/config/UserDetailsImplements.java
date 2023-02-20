@@ -15,14 +15,14 @@ import com.rajeshkawali.model.UserInfo;
  * @author Rajesh_Kawali
  *
  */
-public class UserInfoUserDetails implements UserDetails {
+public class UserDetailsImplements implements UserDetails {
 
 	private static final long serialVersionUID = 1L;
 	private String name;
 	private String password;
 	private List<GrantedAuthority> authorities;
 
-	public UserInfoUserDetails(UserInfo userInfo) {
+	public UserDetailsImplements(UserInfo userInfo) {
 		name = userInfo.getUsername();
 		password = userInfo.getPassword();
 		authorities = Arrays.stream(userInfo.getRoles().split(",")).map(SimpleGrantedAuthority::new)
